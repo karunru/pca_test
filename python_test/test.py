@@ -50,6 +50,7 @@ u2 = u[:,1]
 
 print(np.dot(u1,u2))
 
+plt.figure(figsize=(8,8)) # グラフの縦横比を8inchで固定
 # plt.plot(rx,ry,"bo") # 実データを青でプロット
 plt.plot(u1x,u1y,"-r") # u1を赤でプロット
 plt.plot(u2x,u2y,"-r") # u2を赤でプロット
