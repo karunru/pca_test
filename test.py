@@ -26,11 +26,11 @@ V[1][1] = np.dot(ry-avery,ry-avery.T) / 30
 # 分散共分散行列の固有値,固有ベクトルを計算
 la, u = np.linalg.eig(V)
 
-print(averx)
-print(avery)
-print(V)
-print(la)
-print(u)
+print("averx:", averx)
+print("avery:", avery)
+print("V:", V)
+print("la:", la)
+print("u:", u)
 
 # グラフに直線を書く準備
 u1x = np.arange(-30,30,1) # -30から30まで1刻みのデータを作成
@@ -48,7 +48,7 @@ u2y = u2y * u[1][1]
 u1 = u[:,0]
 u2 = u[:,1]
 
-print(np.dot(u1,u2))
+print("np.dot(u1,u2):", np.dot(u1,u2))
 
 plt.figure(figsize=(8,8)) # グラフの縦横比を8inchで固定
 # plt.plot(rx,ry,"bo") # 実データを青でプロット
